@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="296909" started-at="2022-04-03T13:23:42Z" finished-at="2022-04-03T13:28:39Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="296909" started-at="2022-04-03T13:23:42Z" finished-at="2022-04-03T13:28:39Z">
+      <class name="com.restfulbooker.apitest.businessLogics.CryptoCandleTest">
+        <test-method status="PASS" signature="candleFailTest(java.lang.reflect.Method)[pri:0, instance:com.restfulbooker.apitest.businessLogics.CryptoCandleTest@21337f7b]" name="candleFailTest" duration-ms="192132" started-at="2022-04-03T14:23:42Z" finished-at="2022-04-03T14:26:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.restfulbooker.apitest.businessLogics.CryptoCandleTest.candleFailTest(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- candleFailTest -->
+        <test-method status="PASS" signature="candleTest(java.lang.reflect.Method)[pri:0, instance:com.restfulbooker.apitest.businessLogics.CryptoCandleTest@21337f7b]" name="candleTest" duration-ms="81009" started-at="2022-04-03T14:26:54Z" finished-at="2022-04-03T14:28:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.restfulbooker.apitest.businessLogics.CryptoCandleTest.candleTest(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- candleTest -->
+        <test-method status="PASS" signature="validTest(java.lang.reflect.Method)[pri:0, instance:com.restfulbooker.apitest.businessLogics.CryptoCandleTest@21337f7b]" name="validTest" duration-ms="23738" started-at="2022-04-03T14:28:15Z" finished-at="2022-04-03T14:28:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.restfulbooker.apitest.businessLogics.CryptoCandleTest.validTest(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validTest -->
+      </class> <!-- com.restfulbooker.apitest.businessLogics.CryptoCandleTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RestFulBooker_API_Testing_Automation]" verbose="0">
+  <listeners>
+    <listener class-name="com.restfulbooker.apitest.listeners.TestStatusListener"/>
+    <listener class-name="com.restfulbooker.apitest.listeners.AnnotationTransformer"/>
+  </listeners>
+  <test name="CryptoCandleTest(failed)">
+    <classes>
+      <class name="com.restfulbooker.apitest.businessLogics.CryptoCandleTest">
+        <methods>
+          <include name="validTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.restfulbooker.apitest.businessLogics.CryptoCandleTest -->
+    </classes>
+  </test> <!-- CryptoCandleTest(failed) -->
+</suite> <!-- Failed suite [RestFulBooker_API_Testing_Automation] -->
