@@ -1,4 +1,6 @@
-# Steps to follow to setup API automation in local system:
+#Crypto.com QA Challenges V1.0 Task and V2.2 Task installation guide.
+
+**Steps to follow to setup API automation in local system:**
 
 **Install Java: [Skip this step if already installed]**
 - Check if Java is installed.
@@ -8,31 +10,29 @@
   - Check with API team in case a lower version is installed 
   - Install java development kit if not available.
 
-**Install Eclipse Photon: [Skip this step if already installed]** 
-- Install eclipse photon if not available.
+**Install Eclipse : [Skip this step if already installed]** 
+- Install eclipse if not available.
   - Download eclipse installer.
   - Run eclipse installer.
   - Select install eclipse for java developers.
   - Open workbench.
 
-**Get Code base:**
-  - Clone restassuredFramework
-    - url : https://github.com/sithik1994/restassuredFramework.git
-
-**Setup project in Eclipse:** 
-  - File -> Open Project from File System -> Browse the folder and open the cloned project.
+**Remember install TestNg from Eclipse Marketplace**
+- Install testng
   - Open -> Help -> Eclipse Marketplace -> Search testng -> Install Testng for eclipse plugin -> Restart eclipse.
-  - Maven will be available by default, with eclipse. To check, right click on project -> should have an option called maven.
-```
-Possible issues:
-In case of error in pom.xml file ->Cannot read lifecycle mapping metadata for artifact org.apache.maven.plugins:mav
-  - In terminal open Users/<profile_name>/.m2
-  - Run rm -r repository
-  - Right click on project -> Update project
-In case of error in all import statements
-  - Click on src/main/java folder -> build path -> remove from build path
-  - Click on src -> main -> java ->right click -> build path -> use as source folder
-  - Refresh the project
-````
-**Set up verification**
-  - In business logic package -> Right click on any java file -> run as testng test.
+- Install or add dependency if need and add in to pom.xml
+
+**Get Code base:**
+  - Download my complete source
+  - url : https://github.com/meta19Ken/Crypto.com
+  - When I do this task, I take reference from following restassurredFramework
+    - Clone restassuredFramework
+      - url : https://github.com/sithik1994/restassuredFramework.git
+
+**Run it**
+- File -> Open Project from File System -> Browse the folder and open the project from the folder.
+- Build the project by maven and choose build with "test".
+- You can also use command line to run by typing "mvn test".
+
+**Result**
+- The Result will be generated in ./ExtentedReports/ExtentReportResults.html

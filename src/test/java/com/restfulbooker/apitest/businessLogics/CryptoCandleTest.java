@@ -26,7 +26,7 @@ public class CryptoCandleTest {
   @Test
   public void candleTest(Method method) {
 	  
-	  ExtentTestManager.startTest(method.getName(), "(Task 1a)Description: Succssful case - get USDC_USDT with interval 5m - compare test data 0.999 (sorry, not by txt or list input)");
+	  ExtentTestManager.startTest(method.getName(), "V1.0 (Task 1) Succssful case - get candle stick USDC_USDT with interval 5m - compare closing price with 0.999");
 	  Candle response = new Candle();
 	  
 	  try {	      
@@ -52,7 +52,7 @@ public class CryptoCandleTest {
   @Test
   public void candleFailTest(Method method) {
 	  
-	  ExtentTestManager.startTest(method.getName(), "(Task 1a)Description: Fail case - get candle stick on ETH_USDT with interval 1m - compare test data 0.999 (sorry, not by txt or list input)");
+	  ExtentTestManager.startTest(method.getName(), "V1.0 (Task 1) Fail case - get candle stick on ETH_USDT with interval 1m - compare closing price with 3101");
 	  Candle response = new Candle();
 	  
 	  try {	      
@@ -77,9 +77,9 @@ public class CryptoCandleTest {
   
   
   @Test
-  public void validTest(Method method) {
+  public void seleniumTest(Method method) {
 	  	  
-	  ExtentTestManager.startTest(method.getName(), "(Task 3)Description: Testing Browser and find ZIL/USDT to test Selenium");
+	  ExtentTestManager.startTest(method.getName(), "V2.2 (Task 1)Description: Testing Selenium and find ZIL/USDT Volume data");
 	
 	  try {
 		  ChromeTest.setupClass();
@@ -88,7 +88,7 @@ public class CryptoCandleTest {
 		  cryptoTest.setupTest();
 		  cryptoTest.test();
 
-		  ExtentTestManager.getTest().log(LogStatus.INFO, "Testing Selenium successfully");
+		  ExtentTestManager.getTest().log(LogStatus.INFO, "Find ZIL/USDT and get the Volume data successfully");
 		  cryptoTest.teardown();	
 	  
 	  }
