@@ -50,10 +50,10 @@ This project has a RestAssured based API testing framework. Underlying, it uses 
 ## Main Package<a name="main"></a>
 ```
 - com.restfulbooker.apitest.actions
-   - CandlestickData.java
-   - CandlestickOperation.java
-	 - HttpOperation.java
-	 - ValidatorOperation.java
+  - CandlestickData.java
+  - CandlestickOperation.java
+  - HttpOperation.java
+  - ValidatorOperation.java
 - com.restfulbooker.apitest.interfaces
 	- APIs.Java
 	- Candle.java
